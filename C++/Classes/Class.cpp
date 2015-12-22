@@ -43,6 +43,12 @@ public:
     {
         return standard;
     }
+    string to_string()
+    {
+        string s = "";
+        s = string(age) + "," + first_name + "," + last_name + "," + string(standard);
+        return s;
+    }
 };
 
 int main() {
