@@ -45,9 +45,9 @@ public:
     }
     string to_string()
     {
-        string s = "";
-        s = string(age) + "," + first_name + "," + last_name + "," + string(standard);
-        return s;
+        stringstream ss;
+        ss << age << "," << first_name << "," << last_name << "," << standard;
+        return ss.str();
     }
 };
 
