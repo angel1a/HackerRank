@@ -1,0 +1,5 @@
+X = range(int(input()) + 1)
+Y = range(int(input()) + 1)
+Z = range(int(input()) + 1)
+N = int(input())
+print([[x, y, z] for x in X for y in Y for z in Z if x + y + z != N])
